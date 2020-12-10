@@ -1,5 +1,5 @@
 # CS353-TEAM-PROJECT
-only sharing my work on the project, fiddles linked below missing header styling, footer styling and default chord image but the main works as intended
+only my work on the project, fiddles linked below missing header styling, footer styling as fiddle can only load one stylesheet. Also missing default chord image but the main works as intended
 
 
 1. guitar: https://jsfiddle.net/WilliamSpain/fmvouyxr/1/
