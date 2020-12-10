@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://34.244.229.154/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Piano Chords</title>
+    <meta name="description" content="Octaves Anchored CS project">
+    <link rel="stylesheet" href="./Home - Octaves Anchored_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Home - Octaves Anchored_files/all.css">
+    <link rel="stylesheet" href="./Home - Octaves Anchored_files/baguetteBox.min.css">
+    <link rel="stylesheet" href="./Home - Octaves Anchored_files/styles.min.css">
+    <link rel="stylesheet" href="pianoStyle.css">
+    <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+    <div class="container"><a class="navbar-brand logo" href="http://34.244.229.154/#">Octaves Anchored</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" href="http://34.244.229.154/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://34.244.229.154/contact-us.html">Piano chords</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://34.244.229.154/contact-us.html">Bass Chords</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://34.244.229.154/contact-us.html">Chromatic Tuner</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://34.244.229.154/contact-us.html">Contact Us</a></li>
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="http://34.244.229.154/login.html">login</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="http://34.244.229.154/registration.html">Register</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="page landing-page" style="color: #1b1e21;" id="dropDownPage">
+    <h1 align="center" id="pianoHeader">PIANO CHORDS</h1>
+    <div class="dropDowns" align="center">
+        <form >
+            <select name="Key" id="pianoChordKey" onchange="populatePiano(this.id,'pianoChordScale')" >
+                <option disabled selected value> -- choose chord -- </option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="Ab">Ab</option>
+                <option value="B">B</option>
+                <option value="Bb">Bb</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="Db">Db</option>
+                <option value="E">E</option>
+                <option value="Eb">Eb</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="Gb">Gb</option>
+            </select>
+        </form>
+        <form >
+            <select name="Key" id="pianoChordScale">
+                <option >blank</option>
+            </select>
+        </form>
+        <button  id="getButton" onclick="getPianoChord()">Get Chords</button>
+    </div>
+    <div id="firstPiano">
+        <img src="blankPiano.jpg" alt="blank piano" id="blankPiano">
+    </div>
+    <div class="imageSpot" >
+
+        <ins class="scales_chords_api" chord="a"  instrument="piano" height="300px;"></ins>
+    </div>
+</main>
+<footer class="page-footer dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h5>Get started</h5>
+                <ul>
+                    <li><a href="http://34.244.229.154/#">Home</a></li>
+                    <li><a href="http://34.244.229.154/#">Sign up</a></li>
+                    <li><a href="http://34.244.229.154/#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>About us</h5>
+                <ul>
+                    <li><a href="http://34.244.229.154/#">Company Information</a></li>
+                    <li><a href="http://34.244.229.154/#">Contact us</a></li>
+                    <li><a href="http://34.244.229.154/#">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="http://34.244.229.154/#">Terms of Service</a></li>
+                    <li><a href="http://34.244.229.154/#">Terms of Use</a></li>
+                    <li><a href="http://34.244.229.154/#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2020&nbsp;<br><a href="http://34.244.229.154/#">Octaves Anchored</a><br></p>
+    </div>
+</footer>
+<script src="pianoList.js"></script>
+</body>
+</html>
